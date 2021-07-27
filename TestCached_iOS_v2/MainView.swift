@@ -8,13 +8,15 @@
 import UIKit
 import Lottie
 
+@objc
 class MainView: UIViewController{
-    @IBOutlet weak var logo: AnimationView!
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        logo.animationSpeed = 1;
-        logo.loopMode = .loop;
-        logo.play();
+        //        let splash = DefaultSplash();
+        
+        let splash = UINib(nibName: "DefaultSplash", bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+        
+        view.addSubview(splash)
     }
 }

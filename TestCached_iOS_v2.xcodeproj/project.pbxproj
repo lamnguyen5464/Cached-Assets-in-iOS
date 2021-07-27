@@ -10,7 +10,7 @@
 		4CDE879A818636943B783246 /* Pods_TestCached_iOS_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657443A55AF007F1CB309DED /* Pods_TestCached_iOS_v2.framework */; };
 		89D9861926B01683008CBFEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D9861826B01683008CBFEE /* AppDelegate.m */; };
 		89D9861C26B01683008CBFEE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D9861B26B01683008CBFEE /* SceneDelegate.m */; };
-		89D9862226B01683008CBFEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9862026B01683008CBFEE /* Main.storyboard */; };
+		89D9862226B01683008CBFEE /* DefaultSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9862026B01683008CBFEE /* DefaultSplash.storyboard */; };
 		89D9862426B0168D008CBFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D9862326B0168D008CBFEE /* Assets.xcassets */; };
 		89D9862A26B0168D008CBFEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D9862926B0168D008CBFEE /* main.m */; };
 		89D9863B26B01703008CBFEE /* img_splash_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9863426B01702008CBFEE /* img_splash_bg.png */; };
@@ -22,6 +22,13 @@
 		89D9864426B01712008CBFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9864326B01712008CBFEE /* LaunchScreen.storyboard */; };
 		89D9864D26B01B00008CBFEE /* gif_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89D9864C26B01B00008CBFEE /* gif_logo.gif */; };
 		89D9865226B01C06008CBFEE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9865126B01C06008CBFEE /* MainView.swift */; };
+		89DA2FF626B04A8C007BD1AF /* img_mmct_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DA2FF526B04A8C007BD1AF /* img_mmct_header.png */; };
+		89DA2FF926B04A99007BD1AF /* img_mmct_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DA2FF826B04A98007BD1AF /* img_mmct_footer.png */; };
+		89DA2FFC26B04AA0007BD1AF /* img_mmct_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DA2FFB26B04AA0007BD1AF /* img_mmct_background.png */; };
+		89DA2FFF26B04AAF007BD1AF /* img_gradient_mmct.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DA2FFE26B04AAF007BD1AF /* img_gradient_mmct.png */; };
+		89DA300726B05629007BD1AF /* DefaultSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DA300626B05629007BD1AF /* DefaultSplash.xib */; };
+		89DA300A26B0563C007BD1AF /* CampaignSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DA300926B0563C007BD1AF /* CampaignSplash.xib */; };
+		89DA300D26B056B1007BD1AF /* DefaultSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA300C26B056B1007BD1AF /* DefaultSplash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +39,7 @@
 		89D9861826B01683008CBFEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		89D9861A26B01683008CBFEE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		89D9861B26B01683008CBFEE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		89D9862126B01683008CBFEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89D9862126B01683008CBFEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DefaultSplash.storyboard; sourceTree = "<group>"; };
 		89D9862326B0168D008CBFEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89D9862826B0168D008CBFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D9862926B0168D008CBFEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +53,13 @@
 		89D9864C26B01B00008CBFEE /* gif_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = gif_logo.gif; path = ../../../../../Downloads/gif_logo.gif; sourceTree = "<group>"; };
 		89D9865026B01C06008CBFEE /* TestCached_iOS_v2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCached_iOS_v2-Bridging-Header.h"; sourceTree = "<group>"; };
 		89D9865126B01C06008CBFEE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		89DA2FF526B04A8C007BD1AF /* img_mmct_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mmct_header.png; sourceTree = "<group>"; };
+		89DA2FF826B04A98007BD1AF /* img_mmct_footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mmct_footer.png; sourceTree = "<group>"; };
+		89DA2FFB26B04AA0007BD1AF /* img_mmct_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mmct_background.png; sourceTree = "<group>"; };
+		89DA2FFE26B04AAF007BD1AF /* img_gradient_mmct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_gradient_mmct.png; sourceTree = "<group>"; };
+		89DA300626B05629007BD1AF /* DefaultSplash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultSplash.xib; sourceTree = "<group>"; };
+		89DA300926B0563C007BD1AF /* CampaignSplash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CampaignSplash.xib; sourceTree = "<group>"; };
+		89DA300C26B056B1007BD1AF /* DefaultSplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSplash.swift; sourceTree = "<group>"; };
 		8C16DE1CDD5A58878638B091 /* Pods-TestCached_iOS_v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCached_iOS_v2.debug.xcconfig"; path = "Target Support Files/Pods-TestCached_iOS_v2/Pods-TestCached_iOS_v2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,10 +100,9 @@
 				89D9863326B01702008CBFEE /* LauchScreen */,
 				89D9863226B016E4008CBFEE /* Splash */,
 				89D9863126B016CD008CBFEE /* Application */,
-				89D9862026B01683008CBFEE /* Main.storyboard */,
 				89D9862326B0168D008CBFEE /* Assets.xcassets */,
 				89D9863926B01702008CBFEE /* lottie_logo.json */,
-				89D9864326B01712008CBFEE /* LaunchScreen.storyboard */,
+				89DA2FEE26B046A3007BD1AF /* StoryBoards */,
 				89D9862826B0168D008CBFEE /* Info.plist */,
 				89D9862926B0168D008CBFEE /* main.m */,
 				89D9865126B01C06008CBFEE /* MainView.swift */,
@@ -112,6 +125,9 @@
 		89D9863226B016E4008CBFEE /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				89DA300626B05629007BD1AF /* DefaultSplash.xib */,
+				89DA300926B0563C007BD1AF /* CampaignSplash.xib */,
+				89DA300C26B056B1007BD1AF /* DefaultSplash.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -119,6 +135,10 @@
 		89D9863326B01702008CBFEE /* LauchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				89DA2FFE26B04AAF007BD1AF /* img_gradient_mmct.png */,
+				89DA2FFB26B04AA0007BD1AF /* img_mmct_background.png */,
+				89DA2FF826B04A98007BD1AF /* img_mmct_footer.png */,
+				89DA2FF526B04A8C007BD1AF /* img_mmct_header.png */,
 				89D9863426B01702008CBFEE /* img_splash_bg.png */,
 				89D9863526B01702008CBFEE /* ic_momo_spashscreen.png */,
 				89D9863626B01702008CBFEE /* img_splash_pattern.png */,
@@ -126,6 +146,15 @@
 				89D9863826B01702008CBFEE /* img_dss.png */,
 			);
 			path = LauchScreen;
+			sourceTree = "<group>";
+		};
+		89DA2FEE26B046A3007BD1AF /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				89D9862026B01683008CBFEE /* DefaultSplash.storyboard */,
+				89D9864326B01712008CBFEE /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		A87D8ECB41476B6DB4E3D2E6 /* Frameworks */ = {
@@ -205,15 +234,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D9864026B01703008CBFEE /* lottie_logo.json in Resources */,
+				89DA2FF926B04A99007BD1AF /* img_mmct_footer.png in Resources */,
 				89D9863D26B01703008CBFEE /* img_splash_pattern.png in Resources */,
 				89D9862426B0168D008CBFEE /* Assets.xcassets in Resources */,
 				89D9863E26B01703008CBFEE /* img_ssl.png in Resources */,
 				89D9863F26B01703008CBFEE /* img_dss.png in Resources */,
-				89D9862226B01683008CBFEE /* Main.storyboard in Resources */,
+				89D9862226B01683008CBFEE /* DefaultSplash.storyboard in Resources */,
 				89D9864D26B01B00008CBFEE /* gif_logo.gif in Resources */,
+				89DA300726B05629007BD1AF /* DefaultSplash.xib in Resources */,
 				89D9863C26B01703008CBFEE /* ic_momo_spashscreen.png in Resources */,
 				89D9864426B01712008CBFEE /* LaunchScreen.storyboard in Resources */,
+				89DA2FFF26B04AAF007BD1AF /* img_gradient_mmct.png in Resources */,
 				89D9863B26B01703008CBFEE /* img_splash_bg.png in Resources */,
+				89DA2FF626B04A8C007BD1AF /* img_mmct_header.png in Resources */,
+				89DA300A26B0563C007BD1AF /* CampaignSplash.xib in Resources */,
+				89DA2FFC26B04AA0007BD1AF /* img_mmct_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,18 +305,19 @@
 				89D9865226B01C06008CBFEE /* MainView.swift in Sources */,
 				89D9862A26B0168D008CBFEE /* main.m in Sources */,
 				89D9861C26B01683008CBFEE /* SceneDelegate.m in Sources */,
+				89DA300D26B056B1007BD1AF /* DefaultSplash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		89D9862026B01683008CBFEE /* Main.storyboard */ = {
+		89D9862026B01683008CBFEE /* DefaultSplash.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				89D9862126B01683008CBFEE /* Base */,
 			);
-			name = Main.storyboard;
+			name = DefaultSplash.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -407,6 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TestCached_iOS_v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,6 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TestCached_iOS_v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

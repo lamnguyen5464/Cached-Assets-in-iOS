@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TestCached_iOS_v2-Swift.h"
 
 @interface AppDelegate ()
 
@@ -17,16 +18,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+//    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    //    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"DefaultSplash" bundle:nil];
+    //    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"Campaign"];
     
-    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
+    //    UIViewController *viewController = [[MainView alloc]init];
     
-    self.window.rootViewController = viewController;
-    [self.window makeKeyAndVisible];
+    //    [viewController setModalPresentationStyle:UIModalPresentationOverFullScreen];
+    
+    //    self.window.rootViewController = viewController;
+    
 
-
+//    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
