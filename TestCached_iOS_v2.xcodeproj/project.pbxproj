@@ -29,6 +29,12 @@
 		89DA300726B05629007BD1AF /* DefaultSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DA300626B05629007BD1AF /* DefaultSplash.xib */; };
 		89DA300A26B0563C007BD1AF /* CampaignSplash.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DA300926B0563C007BD1AF /* CampaignSplash.xib */; };
 		89DA300D26B056B1007BD1AF /* DefaultSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA300C26B056B1007BD1AF /* DefaultSplash.swift */; };
+		89DA301026B06065007BD1AF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA300F26B06064007BD1AF /* Extensions.swift */; };
+		89DA301326B06118007BD1AF /* CampaignSplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA301226B06118007BD1AF /* CampaignSplash.swift */; };
+		89DA301626B10EC9007BD1AF /* SafeJSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA301526B10EC7007BD1AF /* SafeJSONObject.swift */; };
+		89DA301926B10F44007BD1AF /* SplashConfigRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA301826B10F44007BD1AF /* SplashConfigRepo.swift */; };
+		89DA301C26B1259C007BD1AF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA301B26B1259B007BD1AF /* UIImage+Extension.swift */; };
+		89DA302326B143D1007BD1AF /* SplashAsyncLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA302226B143D1007BD1AF /* SplashAsyncLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		89DA300626B05629007BD1AF /* DefaultSplash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultSplash.xib; sourceTree = "<group>"; };
 		89DA300926B0563C007BD1AF /* CampaignSplash.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CampaignSplash.xib; sourceTree = "<group>"; };
 		89DA300C26B056B1007BD1AF /* DefaultSplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSplash.swift; sourceTree = "<group>"; };
+		89DA300F26B06064007BD1AF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		89DA301226B06118007BD1AF /* CampaignSplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignSplash.swift; sourceTree = "<group>"; };
+		89DA301526B10EC7007BD1AF /* SafeJSONObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeJSONObject.swift; sourceTree = "<group>"; };
+		89DA301826B10F44007BD1AF /* SplashConfigRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashConfigRepo.swift; sourceTree = "<group>"; };
+		89DA301B26B1259B007BD1AF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		89DA302226B143D1007BD1AF /* SplashAsyncLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAsyncLoader.swift; sourceTree = "<group>"; };
 		8C16DE1CDD5A58878638B091 /* Pods-TestCached_iOS_v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCached_iOS_v2.debug.xcconfig"; path = "Target Support Files/Pods-TestCached_iOS_v2/Pods-TestCached_iOS_v2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +119,7 @@
 				89D9862926B0168D008CBFEE /* main.m */,
 				89D9865126B01C06008CBFEE /* MainView.swift */,
 				89D9865026B01C06008CBFEE /* TestCached_iOS_v2-Bridging-Header.h */,
+				89DA300F26B06064007BD1AF /* Extensions.swift */,
 			);
 			path = TestCached_iOS_v2;
 			sourceTree = "<group>";
@@ -128,6 +141,11 @@
 				89DA300626B05629007BD1AF /* DefaultSplash.xib */,
 				89DA300926B0563C007BD1AF /* CampaignSplash.xib */,
 				89DA300C26B056B1007BD1AF /* DefaultSplash.swift */,
+				89DA301226B06118007BD1AF /* CampaignSplash.swift */,
+				89DA301526B10EC7007BD1AF /* SafeJSONObject.swift */,
+				89DA301826B10F44007BD1AF /* SplashConfigRepo.swift */,
+				89DA301B26B1259B007BD1AF /* UIImage+Extension.swift */,
+				89DA302226B143D1007BD1AF /* SplashAsyncLoader.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -302,10 +320,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D9861926B01683008CBFEE /* AppDelegate.m in Sources */,
+				89DA301026B06065007BD1AF /* Extensions.swift in Sources */,
 				89D9865226B01C06008CBFEE /* MainView.swift in Sources */,
+				89DA302326B143D1007BD1AF /* SplashAsyncLoader.swift in Sources */,
+				89DA301C26B1259C007BD1AF /* UIImage+Extension.swift in Sources */,
+				89DA301926B10F44007BD1AF /* SplashConfigRepo.swift in Sources */,
 				89D9862A26B0168D008CBFEE /* main.m in Sources */,
+				89DA301326B06118007BD1AF /* CampaignSplash.swift in Sources */,
 				89D9861C26B01683008CBFEE /* SceneDelegate.m in Sources */,
 				89DA300D26B056B1007BD1AF /* DefaultSplash.swift in Sources */,
+				89DA301626B10EC9007BD1AF /* SafeJSONObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

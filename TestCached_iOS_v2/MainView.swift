@@ -1,10 +1,3 @@
-//
-//  MainView.swift
-//  TestCached_iOS_v2
-//
-//  Created by Lam Nguyen on 27/07/2021.
-//
-
 import UIKit
 import Lottie
 
@@ -13,10 +6,22 @@ class MainView: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad();
         
-        //        let splash = DefaultSplash();
+        //        let splash = UINib(nibName: "DefaultSplash", bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+        //
+        //        splash.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        //
+        //        view.addSubview(splash)
         
-        let splash = UINib(nibName: "DefaultSplash", bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+        let splash: DefaultSplash = .loadFullScreenFromNib(rootView: self.view)
+        view.addSubview(splash);
         
-        view.addSubview(splash)
+        SplashAsyncLoader.loadAssetsFromLocal{ mapResource in
+            let splash2: CampaignSplash = .loadFullScreenFromNib(rootView: self.view)
+            splash2.setUpUI(mapResource: mapResource)
+            view.addSubview(splash2);
+        }
+
+        SplashAsyncLoader.cacheAssetsFromRemoteConfig()
+
     }
 }
