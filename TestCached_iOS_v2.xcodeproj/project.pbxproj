@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4CDE879A818636943B783246 /* Pods_TestCached_iOS_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657443A55AF007F1CB309DED /* Pods_TestCached_iOS_v2.framework */; };
+		897446DC26B1BC570055B2E2 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897446DB26B1BC560055B2E2 /* SplashController.swift */; };
+		898A862E26B432B400F69CE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898A862D26B432B400F69CE5 /* UIImageView+Extension.swift */; };
+		898A863226B43B1000F69CE5 /* lottie_logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 898A863126B43B1000F69CE5 /* lottie_logo.json */; };
 		89D9861926B01683008CBFEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D9861826B01683008CBFEE /* AppDelegate.m */; };
 		89D9861C26B01683008CBFEE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D9861B26B01683008CBFEE /* SceneDelegate.m */; };
 		89D9862226B01683008CBFEE /* DefaultSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9862026B01683008CBFEE /* DefaultSplash.storyboard */; };
@@ -18,9 +21,7 @@
 		89D9863D26B01703008CBFEE /* img_splash_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9863626B01702008CBFEE /* img_splash_pattern.png */; };
 		89D9863E26B01703008CBFEE /* img_ssl.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9863726B01702008CBFEE /* img_ssl.png */; };
 		89D9863F26B01703008CBFEE /* img_dss.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D9863826B01702008CBFEE /* img_dss.png */; };
-		89D9864026B01703008CBFEE /* lottie_logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 89D9863926B01702008CBFEE /* lottie_logo.json */; };
 		89D9864426B01712008CBFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9864326B01712008CBFEE /* LaunchScreen.storyboard */; };
-		89D9864D26B01B00008CBFEE /* gif_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89D9864C26B01B00008CBFEE /* gif_logo.gif */; };
 		89D9865226B01C06008CBFEE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9865126B01C06008CBFEE /* MainView.swift */; };
 		89DA2FF626B04A8C007BD1AF /* img_mmct_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DA2FF526B04A8C007BD1AF /* img_mmct_header.png */; };
 		89DA2FF926B04A99007BD1AF /* img_mmct_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DA2FF826B04A98007BD1AF /* img_mmct_footer.png */; };
@@ -40,6 +41,9 @@
 /* Begin PBXFileReference section */
 		657443A55AF007F1CB309DED /* Pods_TestCached_iOS_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCached_iOS_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B7CA66B54296522B708931 /* Pods-TestCached_iOS_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCached_iOS_v2.release.xcconfig"; path = "Target Support Files/Pods-TestCached_iOS_v2/Pods-TestCached_iOS_v2.release.xcconfig"; sourceTree = "<group>"; };
+		897446DB26B1BC560055B2E2 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		898A862D26B432B400F69CE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		898A863126B43B1000F69CE5 /* lottie_logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_logo.json; sourceTree = "<group>"; };
 		89D9861426B01683008CBFEE /* TestCached_iOS_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCached_iOS_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D9861726B01683008CBFEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89D9861826B01683008CBFEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,9 +58,7 @@
 		89D9863626B01702008CBFEE /* img_splash_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_splash_pattern.png; sourceTree = "<group>"; };
 		89D9863726B01702008CBFEE /* img_ssl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_ssl.png; sourceTree = "<group>"; };
 		89D9863826B01702008CBFEE /* img_dss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_dss.png; sourceTree = "<group>"; };
-		89D9863926B01702008CBFEE /* lottie_logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_logo.json; sourceTree = "<group>"; };
 		89D9864326B01712008CBFEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89D9864C26B01B00008CBFEE /* gif_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = gif_logo.gif; path = ../../../../../Downloads/gif_logo.gif; sourceTree = "<group>"; };
 		89D9865026B01C06008CBFEE /* TestCached_iOS_v2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCached_iOS_v2-Bridging-Header.h"; sourceTree = "<group>"; };
 		89D9865126B01C06008CBFEE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		89DA2FF526B04A8C007BD1AF /* img_mmct_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mmct_header.png; sourceTree = "<group>"; };
@@ -108,18 +110,18 @@
 		89D9861626B01683008CBFEE /* TestCached_iOS_v2 */ = {
 			isa = PBXGroup;
 			children = (
-				89D9864C26B01B00008CBFEE /* gif_logo.gif */,
 				89D9863326B01702008CBFEE /* LauchScreen */,
 				89D9863226B016E4008CBFEE /* Splash */,
 				89D9863126B016CD008CBFEE /* Application */,
 				89D9862326B0168D008CBFEE /* Assets.xcassets */,
-				89D9863926B01702008CBFEE /* lottie_logo.json */,
 				89DA2FEE26B046A3007BD1AF /* StoryBoards */,
 				89D9862826B0168D008CBFEE /* Info.plist */,
+				898A863126B43B1000F69CE5 /* lottie_logo.json */,
 				89D9862926B0168D008CBFEE /* main.m */,
 				89D9865126B01C06008CBFEE /* MainView.swift */,
 				89D9865026B01C06008CBFEE /* TestCached_iOS_v2-Bridging-Header.h */,
 				89DA300F26B06064007BD1AF /* Extensions.swift */,
+				897446DB26B1BC560055B2E2 /* SplashController.swift */,
 			);
 			path = TestCached_iOS_v2;
 			sourceTree = "<group>";
@@ -146,6 +148,7 @@
 				89DA301826B10F44007BD1AF /* SplashConfigRepo.swift */,
 				89DA301B26B1259B007BD1AF /* UIImage+Extension.swift */,
 				89DA302226B143D1007BD1AF /* SplashAsyncLoader.swift */,
+				898A862D26B432B400F69CE5 /* UIImageView+Extension.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -251,17 +254,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D9864026B01703008CBFEE /* lottie_logo.json in Resources */,
 				89DA2FF926B04A99007BD1AF /* img_mmct_footer.png in Resources */,
 				89D9863D26B01703008CBFEE /* img_splash_pattern.png in Resources */,
 				89D9862426B0168D008CBFEE /* Assets.xcassets in Resources */,
 				89D9863E26B01703008CBFEE /* img_ssl.png in Resources */,
 				89D9863F26B01703008CBFEE /* img_dss.png in Resources */,
 				89D9862226B01683008CBFEE /* DefaultSplash.storyboard in Resources */,
-				89D9864D26B01B00008CBFEE /* gif_logo.gif in Resources */,
 				89DA300726B05629007BD1AF /* DefaultSplash.xib in Resources */,
 				89D9863C26B01703008CBFEE /* ic_momo_spashscreen.png in Resources */,
 				89D9864426B01712008CBFEE /* LaunchScreen.storyboard in Resources */,
+				898A863226B43B1000F69CE5 /* lottie_logo.json in Resources */,
 				89DA2FFF26B04AAF007BD1AF /* img_gradient_mmct.png in Resources */,
 				89D9863B26B01703008CBFEE /* img_splash_bg.png in Resources */,
 				89DA2FF626B04A8C007BD1AF /* img_mmct_header.png in Resources */,
@@ -321,12 +323,14 @@
 			files = (
 				89D9861926B01683008CBFEE /* AppDelegate.m in Sources */,
 				89DA301026B06065007BD1AF /* Extensions.swift in Sources */,
+				898A862E26B432B400F69CE5 /* UIImageView+Extension.swift in Sources */,
 				89D9865226B01C06008CBFEE /* MainView.swift in Sources */,
 				89DA302326B143D1007BD1AF /* SplashAsyncLoader.swift in Sources */,
 				89DA301C26B1259C007BD1AF /* UIImage+Extension.swift in Sources */,
 				89DA301926B10F44007BD1AF /* SplashConfigRepo.swift in Sources */,
 				89D9862A26B0168D008CBFEE /* main.m in Sources */,
 				89DA301326B06118007BD1AF /* CampaignSplash.swift in Sources */,
+				897446DC26B1BC570055B2E2 /* SplashController.swift in Sources */,
 				89D9861C26B01683008CBFEE /* SceneDelegate.m in Sources */,
 				89DA300D26B056B1007BD1AF /* DefaultSplash.swift in Sources */,
 				89DA301626B10EC9007BD1AF /* SafeJSONObject.swift in Sources */,

@@ -18,19 +18,39 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-//    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    //    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window = application.windows.firstObject;
     
+    //
     //    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"DefaultSplash" bundle:nil];
-    //    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"Campaign"];
-    
-    //    UIViewController *viewController = [[MainView alloc]init];
-    
+    //    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"MainView"];
+    //
+    //    //        UIViewController *viewController = [[MainView alloc]init];
+    //
     //    [viewController setModalPresentationStyle:UIModalPresentationOverFullScreen];
-    
+    //
+    //    UIView *splash = [SplashController createDefaultWithView:viewController.view];
+    //
+    //    viewController.view = splash;
+    //
+    //    [viewController setModalPresentationStyle:UIModalPresentationOverFullScreen];
     //    self.window.rootViewController = viewController;
+    //    [self.window makeKeyAndVisible];
     
-
+//    
+//    UIView *loadingView = [[[NSBundle mainBundle] loadNibNamed:@"DefaultSplash" owner:self options:nil] objectAtIndex:0];
+//    
+//    UIViewController *rootViewController = [UIViewController new];
+//    [rootViewController.view addSubview:loadingView];
+//    //    [SplashController bindDefaultSplashWithRootView:rootViewController.view];
+//    [rootViewController setModalPresentationStyle:UIModalPresentationOverFullScreen];
+//    
+//    [self.window setRootViewController:rootViewController];
 //    [self.window makeKeyAndVisible];
+    
+    
+    
+    NSLog(@"haerhaehaehaehaerh");
     
     return YES;
 }

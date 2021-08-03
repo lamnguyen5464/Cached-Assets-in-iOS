@@ -2,51 +2,67 @@ import UIKit
 
 class SplashAsyncLoader{
     
+    public static var loadAssetsSuccessfully = true
+    
     public static func loadAssetsFromLocal(completion: ([String: UIImage]) -> ()){
         let params = SplashConfigRepo.getConfigLocal();
-
-        guard params != nil else {
+        
+        guard params != nil, params?.getStringSafely(field: "status") == "on" else {
             print("param is nil")
             return
         }
         
-        print("loaded config" + params!.toString());
-        
         var mapResource = [String: UIImage] ()
-        params?.getListKeys().forEach{ key in
-            
-            print("stored " + (params?.getStringSafely(field: key))!);
+        CampaignSplash.listKeysAssets.forEach{ key in
             let url = URL(string: (params?.getStringSafely(field: key))!)
-            let image = UIImageView(image: UIImage.loadImageLocal(imageUrl: url!));
-            
-            mapResource[UIImage.getImageNameFrom(url: url!)] = image.image
-//            image.frame = CGRect(x: 100*cnt, y: 100*cnt, width: 200, height: 200)
-//
-//            cnt+=1;
-            
-//            splash.setUpUI(image: image.image!)
-//
-//            self.view.addSubview(image)
+            let image = UIImage.loadImageLocal(imageUrl: url!)
+            mapResource[key] = image
         }
         completion(mapResource)
     }
     
     public static func cacheAssetsFromRemoteConfig(){
         DispatchQueue.global().async {
-            let strData =
-                "{\n" +
-                "  \"image_background\": \"https://cdn.mservice.com.vn/app/img/platform/img_mmct_background.png\",\n" +
-                "  \"image_header\": \"https://cdn.mservice.com.vn/app/img/platform/img_mmct_header.png\",\n" +
-                "  \"image_footer\": \"https://cdn.mservice.com.vn/app/img/platform/img_mmct_footer.png\"\n" +
-                "}"
+            //            let strData = """
+            //                {
+            //                "img_campaign_background": "https://cdn.mservice.com.vn/app/img/splash/img_campaign_background.png",
+            //                "img_campaign_surrounding": "https://cdn.mservice.com.vn/app/img/splash/img_campaign_surrounding.png",
+            //                "img_campaign_header": "https://cdn.mservice.com.vn/app/img/splash/img_campaign_header.png",
+            //                "img_campaign_footer": "https://cdn.mservice.com.vn/app/img/splash/img_campaign_footer.png",
+            //                "vers": "18",
+            //                "status": "on"
+            //              }
+            //            """
+            let strData = """
+                {
+               "img_campaign_background": "",
+                "img_campaign_surrounding": "",
+                "img_campaign_header": "",
+                "img_campaign_footer": "",
+                "vers": "1",
+                "status": "off"
+              }
+            """
+            
             let params = SafeJSONObject(str: strData)
+            print(params.toString())
             
-            
-            params.getListKeys().forEach{ key in
-                UIImage.cacheImageLocal(from: URL(string: params.getStringSafely(field: key))!)
+            SplashAsyncLoader.loadAssetsSuccessfully = true
+            if SplashConfigRepo.isNewConfig(newConfig: params) {
+                //cache assets
+                CampaignSplash.listKeysAssets.forEach{ key in
+                    let urlString = params.getStringSafely(field: key)
+                    if (urlString != ""){
+                        UIImage.cacheImageLocal(from: URL(string:urlString)!)
+                    }
+                    //save config
+                    guard SplashAsyncLoader.loadAssetsSuccessfully else{
+                        return
+                    }
+                    print("@@@herer")
+                    SplashConfigRepo.setConfigLocal(params: params)
+                }
             }
-            SplashConfigRepo.setConfigLocal(params: params)
-            print("-----finish-----")
         }
     }
 }

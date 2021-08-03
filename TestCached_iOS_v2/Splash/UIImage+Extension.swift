@@ -2,20 +2,18 @@ import UIKit
 
 extension UIImage {
     static func cacheImageLocal(from url: URL?){
-        guard url != nil else {
-            return
+        print("start caching \(url?.lastPathComponent)")
+        if (url == nil || url?.lastPathComponent == ""){
+          return
         }
-        print("Download " + url!.absoluteString + " Started")
+        print("start download")
         getData(from: url!) { data, response, error in
             if  let data = data,   error == nil{
                 let fileName = self.getImageNameFrom(url: url)
-                let res = self.saveImage(image: UIImage(data: data)!, fileName: fileName)
-                print("Download Finished " + fileName )
-                print(res.description)
-            }else{
-                //error
+                let isDone = self.saveImage(image: UIImage(data: data)!, fileName: fileName)
+                
+                SplashAsyncLoader.loadAssetsSuccessfully = SplashAsyncLoader.loadAssetsSuccessfully && isDone
             }
-            
         }
     }
     
@@ -32,8 +30,7 @@ extension UIImage {
     }
     
     static func saveImage(image: UIImage, fileName: String) -> Bool {
-        print("start saving...")
-        guard let data = image.jpegData(compressionQuality: 1) ?? image.pngData() else {
+        guard let data = image.pngData() ?? image.jpegData(compressionQuality: 1) else {
             return false
         }
         guard let directory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) as NSURL else {
